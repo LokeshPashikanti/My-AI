@@ -49,15 +49,21 @@ You need **2 things** installed on your machine:
    ollama pull llama3.2
 ### Step 2 — Compile and Run the Java.
 Java compiles to bytecode and runs on the JVM. We are using standard Java libraries, so there are no external dependencies to download.
+
 Open your terminal in the directory containing Main.java.
-Compile the code:Bashjavac Main.java
+
+Compile the code:javac Main.java
+
 Run the server:java Main
+
 You should see:
 === VectorDB Engine (Java) ===
 http://localhost:8080
 20 demo vectors | 16 dims | HNSW+KD-Tree+BruteForce
 Ollama: ONLINE
+
 Open your browser and go to: http://localhost:8080
+
 Architecture Deep Dive
 BruteForce: 
 $O(N \cdot d)$ Exact, baseline.
