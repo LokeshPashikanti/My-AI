@@ -65,12 +65,20 @@ Ollama: ONLINE
 Open your browser and go to: http://localhost:8080
 
 Architecture Deep Dive
+
 BruteForce: 
+
 $O(N \cdot d)$ Exact, baseline.
+
 KDTree: 
+
 $O(\log N)$ Exact, axis-aligned binary space partitioning. 
+
 Fails in high dimensions (curse of dimensionality).
+
 HNSW: 
+
 $O(\log N)$ Approximate, multilayer small-world graph. 
+
 The industry standard for high-dimensional vectors (768D+).
 
